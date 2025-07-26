@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Copatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+
+    <!-- font awesome cdn link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+ 
+     <!-- custom css file link -->
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- lightbox -->
+      <link rel="stylesheet" href="css/lightbox.css">
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+      <!-- <link rel="stylesheet" href="https://lokeshdhakar.com/projects/lightbox2/" type="image/x-icon"> -->
+      
+      <!-- bootstrap5 cdn -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" >
+
+	  <style>
+		.testimonials-section {
+			max-width: 1200px;
+			margin: 50px auto;
+			padding: 30px;
+			background-color: #fff;
+			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+			border-radius: 10px;
+			text-align: center;
+			border: 10px solid #f79308;
+		  }
+		  
+		  .section-title {
+			font-size: 60px;
+			margin-bottom: 20px;
+		  }
+		  
+		  .testimonials-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			overflow: hidden;
+			position: relative;
+			border: 5px solid black;
+		  }
+		  
+		  .testimonial {
+			display: none;
+			flex-shrink: 0;
+			width: 80%;
+			max-width: 500px;
+			padding: 20px;
+			text-align: center;
+			transition: opacity 0.3s ease;
+			
+		  }
+
+		  .testimonial h4{
+			font-size: 30px;
+		  }
+		  .testimonial p{
+			font-size: 20px;
+		  }
+		  
+		  .testimonial.active {
+			display: block;
+		  }
+		  
+		  .testimonial-content {
+			padding: 15px;
+		  }
+		  
+		  .client-image {
+			border-radius: 50%;
+			width: 80px;
+			height: 80px;
+			object-fit: cover;
+			margin-bottom: 15px;
+		  }
+		  
+		  .quote {
+			font-size: 1.2em;
+			font-style: italic;
+			margin-bottom: 15px;
+		  }
+		  
+		  .name {
+			font-size: 1.3em;
+			font-weight: bold;
+		  }
+		  
+		  .position {
+			font-size: 1em;
+			color: #777;
+			margin-top: 5px;
+		  }
+		  
+		  .controls {
+			margin-top: 20px;
+		  }
+		  
+		  button {
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			padding: 10px;
+			margin: 0 10px;
+			font-size: 1.5em;
+			cursor: pointer;
+			border-radius: 5px;
+			transition: background-color 0.3s ease;
+		  }
+		  
+		  button:hover {
+			background-color: #45a049;
+		  }
+		  
+		  @media (max-width: 768px) {
+			.testimonials-section {
+			  padding: 20px;
+			}
+		  
+			.quote {
+			  font-size: 1em;
+			}
+		  
+			.name {
+			  font-size: 1.1em;
+			}
+		  
+			.position {
+			  font-size: 0.9em;
+			}
+		  }
+		  
+	  </style>
+</head>
+<body class="testimonials">
+
+	      <!-- header or navbar section start -->
+		  <header id="full-nav">
+            <div class="header">
+                <div class="container">
+                  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark ">
+        
+                    <a class="navbar-brand me-auto" href="index.html">
+                      <img src="./images/logo5.png" alt="logo" width="120px">
+                    </a>
+                   
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav justify-content-center align-items-center mb-2 mb-lg-0  fs-5 flex-grow-1 pe-3 text-center">
+                        <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="services.html">
+                            Services
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="gallery.html">Events Gallery</a>
+                        </li><li class="nav-item">
+                          
+                        <li class="nav-item">
+                          <a class="nav-link active" href="testimonials.html">Testimonials</a>
+                        </li><li class="nav-item">
+                          <a class="nav-link" href="contact.html">Contact us</a>
+                        </li>
+                        <li class="nav-item">
+                        </li>
+                      </ul>
+                  </div>
+                    <!-- login/sign up -->
+                     <a href="logim.html" class="login-button">Login</a>
+                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                </nav>
+                </div>
+            </div>
+        </header>
+        <!-- header or navbar section end -->
+         <!-- banner section Start -->
+        <section class="banner_section">
+            <div class="container">
+                <div class="banner-content">
+                    <h1>Events Gallery</h1>
+                </div>
+            </div>
+          </section>
+         <!-- banner section end -->
+
+		 <!-- testimonials section start  -->
+
+		 <section class="testimonials-section">
+			<h2 class="section-title">What Our Clients Say</h2>
+			<div class="testimonials-container">
+			  <div class="testimonial" id="testimonial-1">
+				<div class="testimonial-content">
+				  <img src="./images/gallery/party.jpg" alt="Client 1" class="client-image">
+				  <p class="quote">"This is the best service I have ever used. Highly recommend!"</p>
+				  <h4 class="name">John Doe</h4>
+				  <p class="position">CEO, TechCorp</p>
+				</div>
+			  </div>
+			  <div class="testimonial" id="testimonial-2">
+				<div class="testimonial-content">
+				  <img src="./images/gallery/party17.jpg" alt="Client 2" class="client-image">
+				  <p class="quote">"Fantastic experience! The team went above and beyond."</p>
+				  <h4 class="name">Jane Smith</h4>
+				  <p class="position">Marketing Director, WebWorks</p>
+				</div>
+			  </div>
+			  <div class="testimonial" id="testimonial-3">
+				<div class="testimonial-content">
+				  <img src="./images/gallery/wedding1.jpg" alt="Client 3" class="client-image">
+				  <p class="quote">"A game changer! Our productivity has doubled since using their service."</p>
+				  <h4 class="name">Mike Johnson</h4>
+				  <p class="position">Operations Manager, InnovateTech</p>
+				</div>
+			  </div>
+			</div>
+			<div class="controls">
+			  <button class="prev" onclick="prevTestimonial()">&#10094;</button>
+			  <button class="next" onclick="nextTestimonial()">&#10095;</button>
+			</div>
+		  </section>
+		  <!-- testimonials section end -->
+	
+
+
+
+
+
+	    <!-- footer section start -->
+		<section class="footer_wrapper mt-3 mb-md-0">
+			<div class="container px-5 px-lg-0">
+			  <div class="row">
+				<div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+				  <h5>Utsav Events</h5>
+				  <p class="mb-4 ps-0 company_details"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat non ...</p>
+				  <div class="contact-info">
+					<ul class="list-unstyled">
+					  <li><a href="#"><i class="fa fa-home me-3"></i> No. 96, South City, London</a></li>
+					  <li><a href="#"><i class="fa fa-phone me-3"></i> +1 222 3333</a></li>
+					  <li><a href="#"><i class="fa fa-envelope me-3"></i> info@example.com</a></li>
+					</ul>
+				  </div>
+				</div>
+				<div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+				  <h5>Customer Support</h5>
+				  <ul class="link-widget p-0">
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Terms & Conditions</a></li>
+					<li><a href="#">Product Returns</a></li>
+					<li><a href="#">Wholesale Policy</a></li>
+				  </ul>
+				</div>
+				<div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+				  <h5>Quick Links</h5>
+				  <ul class="link-widget p-0">
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="#">Terms & Conditions</a></li>
+					<li><a href="testimonials.html">Testimonials</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+				  </ul>
+				</div>
+	
+				<div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+				  <h5>Newslettter</h5>
+				  <div class="form-group mb-4">
+					<input type="email" class="form-control bg-transparent" placeholder="Enter Your Email Here">
+					<br>
+					<button type="submit" class="main-btn">Subscribe</button>
+				  </div>
+				  <h5>Stay Connected</h5>
+				  <ul class="social-network d-flex align-items-center p-0">
+					<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+					<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+				  </ul>
+				</div>
+			  </div>
+			</div>
+			<div class="container-fluid copyright-section">
+			  <p>Copyright <a href="#"> © UTSAVEVENTS. </a>ALL Rights Reserved</p>
+			</div>
+		  </section>
+		<!-- footer section end -->
+	
+	
+	
+	
+		 <!-- jquery cdn -->
+		 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	
+		 <!-- lightbox pupup -->
+		  <script src="js/lightbox.js"></script>
+	
+		  <!-- bootstrap5 cdn -->
+		  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+		  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+		 
+		  <!-- custom js -->
+		   <script src="js/main.js"></script>
+		   <script>
+			let currentTestimonial = 0;
+
+const testimonials = document.querySelectorAll('.testimonial');
+const totalTestimonials = testimonials.length;
+
+function showTestimonial(index) {
+  // Hide all testimonials
+  testimonials.forEach((testimonial, i) => {
+    testimonial.classList.remove('active');
+  });
+
+  // Show the current testimonial
+  testimonials[index].classList.add('active');
+}
+
+function nextTestimonial() {
+  currentTestimonial = (currentTestimonial + 1) % totalTestimonials;
+  showTestimonial(currentTestimonial);
+}
+
+function prevTestimonial() {
+  currentTestimonial = (currentTestimonial - 1 + totalTestimonials) % totalTestimonials;
+  showTestimonial(currentTestimonial);
+}
+
+// Show the first testimonial initially
+showTestimonial(currentTestimonial);
+
+		   </script>
+</body>
+</html>
