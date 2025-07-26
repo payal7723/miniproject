@@ -1,0 +1,82 @@
+/* Media query 1170px */
+@media (max-width:1170px) {
+
+  /* General CSS */
+  .section-subtitle{
+    max-width: 60%;
+  }
+  /* navbar css */
+  
+
+ /* 02 Banner Section */
+  .banner_section .carousel-item{
+    height: 90vh;
+  }
+
+    
+}
+
+@media (max-width:991px){
+/* General CSS */
+.about .banner_section, 
+.services .banner_section,
+.gallery .banner-section,
+.testimonials .banner_section,
+.contact .banner_section,
+.slide .banner_section{
+    padding-top: 12.5rem ;
+    padding-bottom: 3rem;
+}
+/* 01 Navbar CSS */
+.header .navbar{
+    background-size: cover;
+    padding: 2rem;
+}
+.header .navbar-nav {
+  margin-top: 2rem;
+}
+.header .navbar-nav .nav-link{
+ padding: 0.2rem 0.5rem;
+ margin-bottom: 1rem;
+}
+
+}
+
+/* media query 767px */
+@media (max-width:767px){
+
+ /* General CSS */
+   body,html{
+    font-size: 8px;
+   }
+   .section-subtitle{
+    max-width: 80%;
+   }
+   .banner_section{
+    min-height: 70vh;
+  }
+  .banner_section .carousel-item{
+    height: 70vh;
+  }
+
+
+
+
+}
+
+@media (max-width:590px){
+    /* General CSS */
+   body,html{
+    font-size: 7px;
+   }
+   /* banner section  */
+   .banner_section{
+    min-height: 70vh;
+  }
+
+}
+@media (max-width:480px){
+  .banner_section{
+    min-height: 70vh;
+  }
+}
